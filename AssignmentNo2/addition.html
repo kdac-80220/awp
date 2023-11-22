@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="JavaScript">
+        function twoNumAddition()
+        {
+            var number1=parseInt(document.f.n1.value);
+            var number2=parseInt(document.f.n2.value);
+            var result=number1+number2;
+            document.f.n3.value=result;
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+       Number1<input type="text" name="n1">
+       Number2<input type="text" name="n2">
+       <input type="button" value="calculate" onclick="twoNumAddition()">
+       Result<input type="text" name="n3">
+    </form>
+</body>
+</html>
